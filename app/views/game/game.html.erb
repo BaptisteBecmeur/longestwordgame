@@ -1,0 +1,20 @@
+<h1>Game#Game</h1>
+
+
+<form action="/game">
+  <label for="question">Generate a grid</label>
+  <input type="text" id="grid_size" name="grid_size" placeholder="5 to 10" method="get">
+  <input type="submit" value="OK">
+  <input type="hidden">
+</form>
+
+ <%= @grid %>
+
+<form action="/score">
+  <label for="question">Play here!</label>
+  <input type="text" id="question" name="word" placeholder="Type your word">
+  <input type="submit" value="OK">
+</form>
+
+
+
